@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --color-first:rgb(17, 19, 48);
+    --color-white:white;
+    --color-second:rgb(228, 224, 224);
+    --color-sucess:rgb(72, 255, 112);
+    --color-error:rgb(255, 59, 59);
+}
+body{
+    background: var(--color-first);
+}
+
+.container{
+    background: var(--color-second);
+    width: 450px;
+    max-width: 100%;
+    /* margin: 5vh auto 0 auto; */
+    margin: 1vh auto;
+    border-radius: 10px;
+
+}
+
+.container h1{
+    /* padding: 5px 10px; */
+    text-align: center;
+}
+
+form{
+    padding: 20px 30px;
+}
+.input-control{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.input-control input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 5px;
+
+
+}
+.input-control label{
+    display: inline-block;
+    margin-bottom: 3px;
+    font-family: inherit;
+}
+.input-control i{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    visibility: hidden;
+}
+.input-control small{
+    position: absolute;
+    bottom: 1;
+    left: 0px;
+    visibility: hidden;
+}
+
+.input-control input{
+    outline: 0;
+}
+
+button{
+    background: var(--color-first);
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: 0;
+    color: var(--color-white);
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: inherit;
+    margin-top: 10zpx;
+    cursor: pointer;
+}
+
+.input-control.success input{
+    border-color:var(--color-sucess);
+    outline: none;
+}
+.input-control.error input{
+    border-color: var(--color-error);
+    outline: none;
+}
+.input-control.success i.fa-circle-check{
+    color:var(--color-sucess);
+    visibility: visible;
+    font-weight: bold;
+}
+.input-control.error i.fa-exclamation{
+    color:var(--color-error);
+    visibility: visible;
+    font-weight: bold;
+}
+.input-control.error small{
+    color: var(--color-error);
+    visibility: visible;
+}
